@@ -20,7 +20,7 @@ function App() {
           <AnimatedTitle 
             text="I'm Bence"
             delay={1000}
-            after={() => {console.log("DONE")}}
+            after={() => {}}
             className="text-[5rem] font-semibold" 
           /> : null
         }

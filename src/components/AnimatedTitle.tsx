@@ -9,7 +9,7 @@ type Props = {
   className: string
 }
 
-const AnimatedTitle: React.FC<Props> = ({ text, delay, after, className }) => {
+const AnimatedTitle: React.FC<Props> = ({ text, delay=0, after, className }) => {
   const [content, setContent] = useState("");
 
   const typeKeywordAnimation = (newText: string, after: Function, index: number = 0) => {
