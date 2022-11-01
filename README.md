@@ -1,1 +1,1 @@
-## Personal Website in NextJs
+## Personal Website in ReactJs
