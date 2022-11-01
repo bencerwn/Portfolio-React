@@ -27,9 +27,9 @@ const AnimatedTitle: React.FC<Props> = ({ text, delay=0, after, className }) => 
   }, [])
 
   return (
-    <div className={className}>
-      <span className="text-primary">{content}</span>
-    </div>
+    <span className={className}>
+      {content}
+    </span>
   )
 }
 

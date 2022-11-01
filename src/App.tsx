@@ -14,14 +14,14 @@ function App() {
           text="Hi,"
           delay={1000}
           after={() => {setShowSecond(true)}}
-          className="text-[5rem] font-semibold" 
+          className="text-[5rem] font-medium" 
         />
         {showSecond ?
           <AnimatedTitle 
             text="I'm Bence"
             delay={1000}
             after={() => {}}
-            className="text-[5rem] font-semibold" 
+            className="text-[5rem] font-medium" 
           /> : null
         }
       </div>
