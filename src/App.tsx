@@ -5,25 +5,25 @@ import AnimatedTitle from './components/AnimatedTitle';
 
 
 function App() {
-  const [showSecond, setShowSecond] = useState(false)
+  const [animationStage, setAnimationStage] = useState(2)
 
   return (
     <div className="flex justify-center items-center h-screen">
-      <div className="flex flex-col w-[25rem] h-[25rem]">
-        <AnimatedTitle 
-          text="Hi,"
-          delay={1000}
-          after={() => {setShowSecond(true)}}
-          className="text-[5rem] font-medium" 
-        />
-        {showSecond ?
+      <div className="flex flex-col items-start w-[40rem] h-[25rem]">
+          <div className="text-3xl font-semibold">
+            Hi, I'm
+          </div>
+
           <AnimatedTitle 
-            text="I'm Bence"
-            delay={1000}
+            text="Bence Webber"
+            delay={0}
             after={() => {}}
-            className="text-[5rem] font-medium" 
-          /> : null
-        }
+            className="text-[5rem] font-semibold subpixel-antialiased" 
+          />
+
+          <button className="transition-colors border border-white border-opacity-60 hover:border-opacity-100 rounded-md text-2xl px-6 py-2">
+            Portfolio
+          </button>
       </div>
     </div>
   );
