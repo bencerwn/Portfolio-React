@@ -18,7 +18,10 @@ function App() {
             Bence Webber
           </div>
 
-          <button className="transition-colors border border-white border-opacity-60 hover:border-opacity-100 rounded-lg text-2xl px-6 py-2">
+          <button 
+            onClick={() => { window.open('https://github.com/bencerwn?tab=repositories', '_blank'); }}
+            className="transition-colors border border-white border-opacity-60 hover:border-opacity-100 rounded-lg text-2xl px-6 py-2"
+          >
             Portfolio
           </button>
       </div>
