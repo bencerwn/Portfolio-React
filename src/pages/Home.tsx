@@ -1,6 +1,7 @@
 import React from 'react';
 
 import HorizontalLine from "../components/HorizontalLine";
+import { GithubIcon, LinkedinIcon } from '../components/Icons';
 
 
 type Props = {
@@ -19,6 +20,11 @@ const Home: React.FC<Props> = ({ }) => {
       </div>
       
       <HorizontalLine className="my-10 w-[45rem]" />
+
+      <div className="flex justify-between w-28">
+        <GithubIcon/>
+        <LinkedinIcon/>
+      </div>
 
     </div>
   )
