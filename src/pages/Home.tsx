@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import HorizontalLine from "../components/HorizontalLine";
 import { GithubIcon, LinkedinIcon } from '../components/Icons';
@@ -8,14 +8,20 @@ type Props = {
 }
 
 const Home: React.FC<Props> = ({ }) => {
-  return (
-    <div className="flex flex-col items-center h-full">
+  const [playAnimation, setPlayAnimation] = React.useState(false)
 
-      <div className="text-[5rem] mt-[18vh] h-[7rem]">
+  useEffect(() => {
+    setPlayAnimation(true)
+  }, [])
+
+  return (
+    <div className="flex flex-col items-center pt-[18vh] h-full">
+
+      <div className={`text-[5rem] transition-all duration-[1500ms] ${playAnimation ? 'opacity-100' : 'opacity-0 -translate-y-8'} h-[7rem]`}>
         Bence Webber
       </div>
 
-      <div className="text-[2.3rem] opacity-60">
+      <div className={`text-[2.3rem] transition-all duration-[1500ms] delay-[300ms] ${playAnimation ? 'opacity-60' : 'opacity-0 -translate-y-6'}`}>
         Software Developer
       </div>
       
