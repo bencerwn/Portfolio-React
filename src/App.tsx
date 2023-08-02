@@ -8,8 +8,8 @@ import About from "./pages/About";
 function App() {
   return (
     <div className="flex flex-col text-center font-medium subpixel-antialiased h-screen">
-      <Navbar />
       <BrowserRouter>
+        <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
